@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<!--Redimensionnement du div-->
+<style type="text/css">
+		#carré
+{
+	background-color: blue;
+	position: relative;
+	top: 75px;
+	width: 100px;
+	height: 100px;
+}
+.
+</style>
+
+<body>
+	<center>
+		<input type="button" id="bnt1" onclick="changeSize()" value="Button 1">
+		<input type="button" id="bnt2" onclick="green()" value="Button 2">
+		<input type="button" id="bnt3" onclick="initiale()" value="Button 3">
+		<input type="button" id="bnt4" onclick="cacher()" value="Button 4">
+		<input type="button" id="bnt5" onclick="affich()" value="Button 5">
+	</center>
+
+	<center><div id="carré" class="green"></div></center>
+
+<script type="text/javascript">
+	 
+	
+	function changeSize(carré)
+    { 
+        if ( document.getElementById(carré) != null )
+        { 
+            document.getElementById(divId).style.height= 20 +"px"; 
+        } 
+    }
+	
+	function green() //Rendre le block vert
+    {
+    	var colorgreen = document.getElementById("carré");
+    	colorgreen.style.backgroundColor="green";
+    }
+
+    function initiale() //Remettre le block à sa couleur initiale
+    {
+    	var colorgreen = document.getElementById("carré");
+    	colorgreen.style.backgroundColor="blue";
+    }
+
+    function cacher() //cacher le block
+	{
+    	var x = document.getElementById("carré");
+    	if (x.style.display === "none") 
+    	{
+        	x.style.display = "none";
+    	} 
+    	else 
+    	{
+        	x.style.display = "none";
+    	}
+    }
+
+	function affich() //affichage du block
+	{
+    	var x = document.getElementById("carré");
+    	if (x.style.display === "block") 
+    	{
+        	x.style.display = "block";
+    	} 
+    	else 
+    	{
+        	x.style.display = "block";
+    	}
+    }
+
+</script>
+
+</body>
+</html>
